@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="view" content="with-device-width, initial-scale=1.0">
+        <title>Website Design</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="back">
+            <nav>
+               <img src="image/menu.png" class="menu-bar">
+               <img src="image/logo.png" class="logo">
+               <ul>
+                <li> <a href="">Accomodation</a> </li>
+                <li> <a href="">Front Header</a> </li>
+               </ul> 
+               <button type="button" onclick="togglebtn()" id="btn"> <span></span></button>
+            </nav> 
+
+            <div class="lamp">
+                <img src="image/lamp.png" class="lamp-m">
+                <img src="image/light.png" class="light" id="light">
+
+            </div>
+            
+        </div> 
+        <script> 
+            var btn = document.getElementById("btn");
+            var light = document.getElementById("light");
+            function togglebtn(){ 
+                btn.classList.toggle("active");
+                light.classList.toggle("on");
+
+        }
+        </script>
+    </body>
+</html>
