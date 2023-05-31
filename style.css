@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+} 
+
+.back{
+    background-color: rgb(58, 88, 109);
+    min-height: 100vh;
+    width: 100%;
+    color: beige;
+    position: relative;
+
+} 
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%; 
+  } 
+
+  nav.menu-img{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  } 
+nav.logo{
+    width: 100px;
+    cursor: pointer;
+} 
+nav ul{
+    flex: 1;
+    text-align: right;
+} 
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+} 
+
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+} 
+
+button{
+    background-color: blanchedalmond;
+    height: 30px;
+    width: 60px;
+    border-radius: 60px;
+    border: 0;
+    outline: 0;
+    cursor: pointer; 
+    transition: background 0.5s;
+} 
+button span{
+    display: block;
+    background-color: aliceblue;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px; 
+    transition: background 0.5s, margin-left 0.5s;
+} 
+
+.lamp{
+    position: absolute;
+    top:-20px;
+    left: 22%;
+    width: 200px;
+} 
+.lamp-m{
+    width: 100%;
+} 
+
+.light{
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition:opaci 0.5s;
+} 
+
+.active{
+    background-color: aquamarine;
+} 
+
+.active span{
+    background-color: aliceblue;
+    margin-left: 30px;
+} 
+.on{
+    opacity: 1;
+}
